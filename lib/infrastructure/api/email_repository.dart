@@ -46,3 +46,6 @@ class EmailRepositoryImpl implements EmailRepository {
     }
   }
 }
+/**
+ * this logic is ensuring the data entry of user emails
+ */

@@ -6,14 +6,14 @@ String emailModelToJson(Email data) => json.encode(data.toJson());
 
 class Email {
   Email({
-   required this.status,
+    required this.status,
   });
 
   String status;
 
   factory Email.fromJson(Map<String, dynamic> json) => Email(
         status: json["status"],
-      );
+      ); //email is a common datapoint, hence it being factorialized
 
   Map<String, dynamic> toJson() => {
         "status": status,
